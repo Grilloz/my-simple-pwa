@@ -1,0 +1,56 @@
+{
+  "name": "my-simple-pwa",
+  "version": "1.0.0",
+  "description": "A simple PWA app with svelte and parcel",
+  "pwaManifest": {
+    "name": "My Simple PWA",
+    "shortName": "My Simple PWA",
+    "startURL": "./offline",
+    "theme": "#add8e6",
+    "generateIconOptions": {
+      "baseIcon": "./assets/my-icon.svg",
+      "sizes": [192, 384, 512],
+      "genFavicons": true
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grilloz/svelte-parcel-template.git"
+  },
+  "keywords": [
+    "svelte",
+    "parcel",
+    "jest",
+    "pwa"
+  ],
+  "author": "grilloz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grilloz/svelte-parcel-template/issues"
+  },
+  "homepage": "https://github.com/Grilloz/svelte-parcel-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
+    "jest": "^25.4.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-pwa-manifest": "^3.0.6",
+    "parcel-plugin-svelte": "^4.0.6",
+    "parcel-plugin-sw-precache": "^1.1.2",
+    "sass": "^1.26.3",
+    "svelte": "^3.20.1",
+    "svelte-jester": "^1.0.5",
+    "svelte-preprocess": "^3.7.1"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/svelte": "^3.0.0"
+  }
+}
